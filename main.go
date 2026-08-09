@@ -51,6 +51,7 @@ func main() {
 
 		case POOL:
 			servers = nil
+			currentIndex = 0
 			for index, command := range args {
 				if index == 0 { continue }
 				servers = append(servers, command)
